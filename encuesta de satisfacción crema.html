@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <title>FORMULARIO DE SATISFACCIÓN DEL CLIENTE</title>
+ </head>
+ <body>
+ 	<header>
+ 	 
+  <div>
+  <h1> Cremas hidratantes Natura</h1>
+  <h2> Encuesta sobre el producto </h2>
+  </div>
+ 		 <div> 
+<img src="natura-760x510.jpg" alt="fotografía de cremas hidratantes" width="300" height="200">
+</div>  
+</header>
+<form method="post" action="miservidor.php">
+    <div>
+      <label for=”nombre”>Código póstal:</label>
+      <input id=”nombre” type=”text”>
+    </div>
+    
+
+
+  	<div>
+      <label for=”email”>Email:</label>
+      <input id=”nombre” type=”text”>
+    </div>
+
+  <div>
+    <label for=”puntospositivosdelproducto”>Puntos positivos del producto:</label>
+    <textarea id=”comentario”></textarea>
+  </div>
+  <div>
+    <label for=”puntosnegativosdelproducto”>Puntos negativos del produto:</label>
+    <textarea id=”comentario”></textarea>
+  </div>
+<div>
+      <label for=”Niveldesatisfaccion”>Nivel de satisfacción:</label>
+      <select id=”Niveldesatisfaccion”>
+        <option value=”1”>1</option>
+        <option value=”2”>2</option>
+        <option value=”3” selected="3">3</option>
+        <option value=”4”>4</option>
+        <option value=”5”>5</option></select>
+        <legend> <small> Escoge una opción siendo 1 la más baja y 5 la más alta </small> </legend>
+</div>
+<div>
+      <label for=”Niveldehidratacion”>Nivel de hidratación:</label>
+      <select id=”Niveldesatisfaccion”>
+        <option value=”pésimo”>pésimo</option>
+        <option value=”regular”>regular</option>
+        <option value=”bueno” selected="bueno">bueno</option>
+        <option value=”excelente”>excelente</option>
+        </select>
+</div>
+<div>
+      <label for=”Niveldesuavidad”>Nivel de suavidad:</label>
+      <select id=”Niveldesuavidad”>
+        <option value=”pésimo”>pésimo</option>
+        <option value=”regular”>regular</option>
+        <option value=”bueno” selected="bueno">bueno</option>
+        <option value=”excelente”>excelente</option>
+        </select>
+</div>
+<div>
+    <label for=”comentariosadicionales”>Comentarios adicionales sobre la calidad del producto:</label>
+    <textarea id=”comentariosadicionales”></textarea>
+  </div>
+
+  <input type=”submit” value=”Enviar”> 
+</form>
+
+
+
+ </body>
+</html>
